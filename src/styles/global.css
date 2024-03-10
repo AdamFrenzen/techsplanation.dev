@@ -6,7 +6,7 @@
 		0 6px 12px rgba(var(--accent), 33%);
 	/* light theme */
 	--bg: 249, 249, 249;
-    --bg-contrast: 229, 233, 240;
+    --bg-contrast: 230, 230, 230;
 	--color: 0, 0, 0;
 	--gray: 50, 50, 50;
 	--shadow-color: 0, 0, 0;
@@ -59,24 +59,24 @@ h3,
 h4,
 h5,
 h6 {
-	margin: 0 0 0.5rem 0;
+	margin: 0 0 0.5em 0;
 	color: rgb(var(--color));
 	line-height: 1.2;
 }
 h1 {
-	font-size: 3.052em;
+	font-size: 2.5em;
 }
 h2 {
-	font-size: 2.441em;
+	font-size: 1.5em;
 }
 h3 {
-	font-size: 1.953em;
+	font-size: 1.1em;
 }
 h4 {
-	font-size: 1.563em;
+	font-size: 1.0em;
 }
 h5 {
-	font-size: 1.25em;
+	font-size: 0.9em;
 }
 strong,
 b {
@@ -90,9 +90,6 @@ a:hover {
 }
 p {
 	margin-bottom: 1em;
-}
-.prose p {
-	margin-bottom: 2em;
 }
 textarea {
 	width: 100%;

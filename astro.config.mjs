@@ -1,4 +1,5 @@
 import { defineConfig } from 'astro/config';
+import theme from './src/assets/catppuccin-mocha.json';
 import mdx from '@astrojs/mdx';
 
 import sitemap from '@astrojs/sitemap';
@@ -7,4 +8,9 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
 	site: 'https://example.com',
 	integrations: [mdx(), sitemap()],
+	markdown: {
+		shikiConfig: {
+			theme: theme,
+		}
+	}
 });
