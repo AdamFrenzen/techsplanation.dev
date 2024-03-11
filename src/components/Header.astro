@@ -1,11 +1,15 @@
 ---
 import HeaderLink from './HeaderLink.astro';
+import HeaderLogo from './HeaderLogo.astro'
 import { SITE_TITLE } from '../consts';
 ---
 
 <header>
 	<nav>
-		<a class="logo" href="/">{SITE_TITLE}</a>
+		<a class="logo" href="/">
+			<HeaderLogo />
+			<span>{SITE_TITLE}</span>
+		</a>
 		<div class="internal-links">
 			<HeaderLink href="/blog">Blog</HeaderLink>
 			<div class="icon baseline">
@@ -16,9 +20,6 @@ import { SITE_TITLE } from '../consts';
 					</svg>
 				</a>
 			</div>
-			<!-- <HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/about">About</HeaderLink> -->
-
 		</div>
 	</nav>
 </header>
@@ -26,14 +27,14 @@ import { SITE_TITLE } from '../consts';
 <style>
 	header {
 		margin: 0;
-		padding: 0 2em;
+		padding: 0 0.75em;
 		background-color: rgb(var(--bg));
 		box-shadow: 0 2px 8px rgba(var(--shadow-color), var(--shadow-percent));
 	}
-
 	nav .logo {
+		display: flex;
 		margin: 0;
-		font-size: 1em;
+		font-size: 1.1em;
 		font-weight: bolder;
 		border-bottom: 0;
 	}
@@ -41,7 +42,9 @@ import { SITE_TITLE } from '../consts';
 	.logo a.active {
 		text-decoration: none;
 	}
-
+	nav .logo span {
+		margin-left: 0.5em;
+	}
 	nav {
 		display: flex;
 		align-items: center;
@@ -63,9 +66,6 @@ import { SITE_TITLE } from '../consts';
 	#themeToggle:hover {
 		cursor: pointer;
 	}
-
-
-
 	.sun { fill: black; }
 	.moon { fill: transparent; }
 
