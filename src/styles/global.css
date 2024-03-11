@@ -98,6 +98,20 @@ textarea {
 input {
 	font-size: 16px;
 }
+button {
+	text-align: center;
+	font-weight: bold;
+	border: none;
+	border-radius: 6px;
+	padding: 1em 2em;
+	font-size: 1em;
+	background-color: rgb(var(--accent));
+	color: white;
+}
+button:hover {
+	cursor: pointer;
+	background-color: rgba(var(--accent), 85%);
+}
 table {
 	width: 100%;
 }
