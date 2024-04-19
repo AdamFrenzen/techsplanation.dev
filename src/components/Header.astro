@@ -88,6 +88,7 @@ import { SITE_TITLE } from '../consts';
 </style>
 
 <script is:inline>
+	// Site theme
 	const theme = (() => {
 		if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
 			return localStorage.getItem('theme');
@@ -115,4 +116,15 @@ import { SITE_TITLE } from '../consts';
 	}
 
 	document.getElementById("themeToggle").addEventListener("click", handleToggleClick);
+</script>
+<script>
+	// Site "analytics"
+	import {CounterAPI} from "counterapi";
+
+	const counter = new CounterAPI();
+    const name = import.meta.env.PUBLIC_COUNTER_NAME;
+
+	counter.up("techsplanation.dev", name, true).then((res) => {
+		// console.log(res)
+	})
 </script>
