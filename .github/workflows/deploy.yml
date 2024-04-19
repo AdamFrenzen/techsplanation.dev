@@ -35,7 +35,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Create env file
-        run:
+        run: |
           touch .env
           echo PUBLIC_COUNTER_NAME=${{ secrets.PUBLIC_COUNTER_NAME }} >> .env
           cat .env
