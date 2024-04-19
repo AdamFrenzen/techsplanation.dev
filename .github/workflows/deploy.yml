@@ -39,3 +39,4 @@ jobs:
         uses: actions/deploy-pages@v4
         env:
           PUBLIC_COUNTER_NAME: ${{ secrets.PUBLIC_COUNTER_NAME }}
+          
