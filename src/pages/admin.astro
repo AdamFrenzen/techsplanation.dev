@@ -27,16 +27,12 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     const counter = new CounterAPI();
     const name = import.meta.env.PUBLIC_COUNTER_NAME;
 
-    if (name) {
-        counter.get("techsplanation.dev", name, true).then((res) => {
-            if (viewCountEle) {
-                const views = res.Count;
-                viewCountEle.innerHTML = String(views);
-            } else {
-                console.error('Could not get the view count element.')
-            }
-        })
-    } else {
-        console.error('No PUBLIC_COUNTER_NAME')
-    }
+    counter.get("techsplanation.dev", name, true).then((res) => {
+        if (viewCountEle) {
+            const views = res.Count;
+            viewCountEle.innerHTML = String(views);
+        } else {
+            console.error('Could not get the view count element.')
+        }
+    })
 </script>
