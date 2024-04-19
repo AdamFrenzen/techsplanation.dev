@@ -37,3 +37,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        env:
+          PUBLIC_COUNTER_NAME: ${{ secrets.PUBLIC_COUNTER_NAME }}
