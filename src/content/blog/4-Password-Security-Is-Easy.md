@@ -1,17 +1,17 @@
 ---
-title: 'Password Security Is Easy... Easier Than Weak Password Practices'
-description: 'Learn a password system that is extremely easy and secure.'
-pubDate: 'Apr 16 2024'
-heroImage: '/blog-placeholder-4.jpg'
+title: "Password Security Is Easy... Easier Than Weak Password Practices"
+description: "Learn a password system that is extremely easy and secure."
+pubDate: "Apr 16 2024"
+heroImage: "/blog-placeholder-4.jpg"
 ---
 
-Most people lack strong password security, which puts them at risk of becoming hacked and losing money or other ordeals. 
+Most people lack strong password security, which puts them at risk of becoming hacked and losing money or other ordeals.
 
 Strong password security is easier and less troublesome than weak security.
 
 If you don't have strong password security, it's time to implement good practices to protect yourself.
 
-![image](../../../public/images/password-statistics.jpg)
+![image](../../../public/images/4/password-statistics.jpg)
 
 ## Password Attacks:
 
@@ -45,21 +45,21 @@ A keylogger is a malicious software that allows a hacker to examine key presses 
 
 Scanning for malware and avoid typing passwords in with the keyboard (auto-fill or virtual keyboards) protects against keyloggers.
 
-### 5.) Phishing: 
+### 5.) Phishing:
 
 Phishing attacks are where hackers trick someone into providing information like logins or credit cards; this is typically done through imitating companies and creating fake websites.
 
 To prevent phishing attacks, verify the authenticity of emails and URLs and avoid clicking on suspicious links or providing personal information.
 
-## Password Security With Password Manager:   
+## Password Security With Password Manager:
 
 To defend against password attacks I recommend using a password manager. A password manager is software that stores your passwords and commonly provides auto-fill features. Using a password manager is extremely easy and allows for very secure practices. Some password managers are better than others for ease and security.
 
 The password manager that I recommend is **Bitwarden**, which is free.
 
-![Bitwarden Logo](../../../public/images/bitwarden.png)
+![Bitwarden Logo](../../../public/images/4/bitwarden.png)
 
-I would advise against managers like "iCloud Keychain" and "Google Password Manager" because they are more vulnerable if someone has access to your device, and Bitwarden has improved functionality and features. 
+I would advise against managers like "iCloud Keychain" and "Google Password Manager" because they are more vulnerable if someone has access to your device, and Bitwarden has improved functionality and features.
 
 ## Password Security Practices With Bitwarden:
 
@@ -79,10 +79,10 @@ Bitwarden eliminates the difficult task of remembering passwords and what accoun
 
 ### 3.) Randomly Generated Passwords:
 
-Because Bitwarden will auto-fill passwords or allow you to easily copy and paste them, having to know your passwords is not necessary. 
+Because Bitwarden will auto-fill passwords or allow you to easily copy and paste them, having to know your passwords is not necessary.
 
 <div style="display: flex; margin: 20px">
-    <img src="/images/bitwarden-pass-generator.png" alt="password generator" width="300px" style="margin: auto"/>
+    <img src="/images/4/bitwarden-pass-generator.png" alt="password generator" width="300px" style="margin: auto"/>
 </div>
 
 Using Bitwarden’s password generation, your passwords can be extremely long and use every type of character (letters, capital letters, numbers, and symbols).
@@ -95,12 +95,12 @@ This allows your passwords to be an impenetrable wall for brute force attacks.
 
 ### 5.) Optional: "Peppering" Important Passwords:
 
-If someone were to obtain your master password for Bitwarden (which should be very difficult) they would have access to all your passwords. 
+If someone were to obtain your master password for Bitwarden (which should be very difficult) they would have access to all your passwords.
 
-"Peppering" passwords is adding an extra part in the account's password that's not included in the password Bitwarden has saved. This could be a word or pin. You can add your "pepper" after auto-filling. 
+"Peppering" passwords is adding an extra part in the account's password that's not included in the password Bitwarden has saved. This could be a word or pin. You can add your "pepper" after auto-filling.
 
 <div style="display: flex; margin: 20px">
-    <img src="/images/pepper-password.png" alt="password generator" style="margin: auto"/>
+    <img src="/images/4/pepper-password.png" alt="password generator" style="margin: auto"/>
 </div>
 
 This should only be used on your most important accounts, like emails or bank accounts, because typing in your pepper is slightly tedious.
