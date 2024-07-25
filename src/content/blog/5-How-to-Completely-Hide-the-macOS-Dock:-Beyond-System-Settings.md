@@ -1,6 +1,6 @@
 ---
 title: "How to Completely Hide the macOS Dock: Beyond System Settings"
-description: "Hide the macOS Dock completely, without the system settings app."
+description: "Hide the macOS Dock completely, not through the system settings app."
 pubDate: "Jun 20 2024"
 heroImage: "/blog-placeholder-4.jpg"
 ---
@@ -45,6 +45,6 @@ Now, the Dock will not appear when hovering the mouse at the bottom. However, yo
 
 The macOS Dock can be useful, but with tools like Spotlight Search, Alfred, and Raycast, it often gets in the way. Using Onyx, you can completely hide the Dock, ensuring it won't appear even when hovering the mouse at the bottom of the screen. You can still access the Dock with the key bind `cmd`+`option`+`d` whenever needed, allowing you to fully utilize your screen space without unnecessary distractions.
 
-### Up next:
+### Read Next:
 
-The next article will be "How to hide the macOS menu bar". Check back soon.
+[How to Hide the macOS Menu Bar: Beyond System Settings](https://techsplanation.dev/blog/6-how-to-hide-the-macos-menu-bar-beyond-system-settings/)
