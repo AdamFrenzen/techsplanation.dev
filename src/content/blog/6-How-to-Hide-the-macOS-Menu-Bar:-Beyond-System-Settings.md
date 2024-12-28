@@ -9,14 +9,13 @@ heroImage: "/blog-placeholder-4.jpg"
 
 The only customization setting that macOS natively offers for the menu bar is to "Automatically show or hide the menu bar". This post shares an idea that might be preferred over just the native settings.
 
-
 ![Menu bar settings, can be found in control center - automatically hide and show the menu bar at the bottom.](/images/6/hide-menu-bar-settings.png)
 
 **Never** results in having the menu bar on screen at all times. So all of the app menu text, menu bar app icons, and the clock will clutter your screen and cause you to lose screen space.
 
 **Always** causes the menu bar to toggle when your mouse hovers at the top of the screen. The auto hide often causes you to unintentionally toggle the menu bar whenever interacting with thing's at the top of the screen.
 
-Neither of these options are great. Personally, if I had to choose one I would choose to always show the menu bar, because I find the auto setting gets in my way. But I still don't like the clutter the menu bar adds. 
+Neither of these options are great. Personally, if I had to choose one I would choose to always show the menu bar, because I find the auto setting gets in my way. But I still don't like the clutter the menu bar adds.
 
 <div style="display: flex;">
     <img 
@@ -40,7 +39,7 @@ Rectangle is a popular, completely free, window management app for macOS. The ap
     />
 </div>
 
-Enter the following command in the terminal app to set Rectangle to include a margin at the top when snapping. Setting the top gap at 24 was the perfect amount for the gap to be the exact size of the menu bar for me, but you can change that number to whatever size works. 
+Enter the following command in the terminal app to set Rectangle to include a margin at the top when snapping. Setting the top gap at 24 was the perfect amount for the gap to be the exact size of the menu bar for me, but you can change that number to whatever size works.
 
 You must restart the Rectangle app for the changes to take effect after running the command.
 

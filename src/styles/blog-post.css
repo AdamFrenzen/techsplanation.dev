@@ -1,25 +1,29 @@
 main {
-    width: 720px;
-    margin: auto;
-    /* padding-top: 1.5rem; */
-    color: rgb(var(--gray));
+  width: 720px;
+  margin: auto;
+  /* padding-top: 1.5rem; */
+  color: rgb(var(--gray));
 }
 .title {
-    margin: 0 0 1em 0;
-    line-height: 1;
+  margin: 0 0 1em 0;
+  line-height: 1;
 }
 .title hr {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 .date {
-    margin-bottom: 0.5em;
-    color: rgb(var(--gray));
+  margin-bottom: 0.5em;
+  color: rgb(var(--gray));
 }
 .last-updated-on {
-    font-style: italic;
+  font-style: italic;
 }
 .post {
-   h1, h2, h3, h4, h5 {
-	margin: 1.5em 0 0.5em 0;
-   } 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin: 1.5em 0 0.5em 0;
+  }
 }
