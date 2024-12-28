@@ -7,7 +7,7 @@ import { getCollection } from "astro:content";
 import FormattedDate from "../../components/FormattedDate.astro";
 import "../../styles/posts-page.css";
 
-const posts: any = (await getCollection("blog")).sort(
+const posts: any = (await getCollection("leetcode")).sort(
   (a: any, b: any) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 ---
@@ -22,18 +22,17 @@ const posts: any = (await getCollection("blog")).sort(
     <main>
       <section>
         <div class="filter-header">
-          <h2>All Posts:</h2>
+          <h2>All Write-Ups:</h2>
         </div>
         <ul>
           {
             posts.map((post) => (
               <li>
-                <a href={`/blog/${post.slug}/`}>
+                <a href={`/leetcode/${post.slug}/`}>
                   <h3 class="title">{post.data.title}</h3>
                   <p class="date">
                     <FormattedDate date={post.data.pubDate} />
                   </p>
-                  <p class="descr">{post.data.description}</p>
                 </a>
               </li>
             ))
