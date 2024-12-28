@@ -1,130 +1,153 @@
 ---
-import HeaderLink from './HeaderLink.astro';
-import HeaderLogo from './HeaderLogo.astro'
-import { SITE_TITLE } from '../consts';
+import HeaderLink from "./HeaderLink.astro";
+import HeaderLogo from "./HeaderLogo.astro";
+import { SITE_TITLE } from "../consts";
 ---
 
 <header>
-	<nav>
-		<a class="logo" href="/">
-			<HeaderLogo />
-			<span>{SITE_TITLE}</span>
-		</a>
-		<div class="internal-links">
-			<HeaderLink href="/blog">Blog</HeaderLink>
-			<div class="icon baseline">
-				<a id="themeToggle">
-					<svg width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-						<path class="sun" fill-rule="evenodd" d="M12 17.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zm0 1.5a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm12-7a.8.8 0 0 1-.8.8h-2.4a.8.8 0 0 1 0-1.6h2.4a.8.8 0 0 1 .8.8zM4 12a.8.8 0 0 1-.8.8H.8a.8.8 0 0 1 0-1.6h2.5a.8.8 0 0 1 .8.8zm16.5-8.5a.8.8 0 0 1 0 1l-1.8 1.8a.8.8 0 0 1-1-1l1.7-1.8a.8.8 0 0 1 1 0zM6.3 17.7a.8.8 0 0 1 0 1l-1.7 1.8a.8.8 0 1 1-1-1l1.7-1.8a.8.8 0 0 1 1 0zM12 0a.8.8 0 0 1 .8.8v2.5a.8.8 0 0 1-1.6 0V.8A.8.8 0 0 1 12 0zm0 20a.8.8 0 0 1 .8.8v2.4a.8.8 0 0 1-1.6 0v-2.4a.8.8 0 0 1 .8-.8zM3.5 3.5a.8.8 0 0 1 1 0l1.8 1.8a.8.8 0 1 1-1 1L3.5 4.6a.8.8 0 0 1 0-1zm14.2 14.2a.8.8 0 0 1 1 0l1.8 1.7a.8.8 0 0 1-1 1l-1.8-1.7a.8.8 0 0 1 0-1z"/>
-						<path class="moon" fill-rule="evenodd" d="M16.5 6A10.5 10.5 0 0 1 4.7 16.4 8.5 8.5 0 1 0 16.4 4.7l.1 1.3zm-1.7-2a9 9 0 0 1 .2 2 9 9 0 0 1-11 8.8 9.4 9.4 0 0 1-.8-.3c-.4 0-.8.3-.7.7a10 10 0 0 0 .3.8 10 10 0 0 0 9.2 6 10 10 0 0 0 4-19.2 9.7 9.7 0 0 0-.9-.3c-.3-.1-.7.3-.6.7a9 9 0 0 1 .3.8z"/>
-					</svg>
-				</a>
-			</div>
-		</div>
-	</nav>
+  <nav>
+    <a class="logo" href="/">
+      <HeaderLogo />
+      <span>{SITE_TITLE}</span>
+    </a>
+    <div class="internal-links">
+      <HeaderLink href="/blog">Blog</HeaderLink>
+      <div class="icon baseline">
+        <a id="themeToggle">
+          <svg
+            width="20px"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24">
+            <path
+              class="sun"
+              fill-rule="evenodd"
+              d="M12 17.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zm0 1.5a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm12-7a.8.8 0 0 1-.8.8h-2.4a.8.8 0 0 1 0-1.6h2.4a.8.8 0 0 1 .8.8zM4 12a.8.8 0 0 1-.8.8H.8a.8.8 0 0 1 0-1.6h2.5a.8.8 0 0 1 .8.8zm16.5-8.5a.8.8 0 0 1 0 1l-1.8 1.8a.8.8 0 0 1-1-1l1.7-1.8a.8.8 0 0 1 1 0zM6.3 17.7a.8.8 0 0 1 0 1l-1.7 1.8a.8.8 0 1 1-1-1l1.7-1.8a.8.8 0 0 1 1 0zM12 0a.8.8 0 0 1 .8.8v2.5a.8.8 0 0 1-1.6 0V.8A.8.8 0 0 1 12 0zm0 20a.8.8 0 0 1 .8.8v2.4a.8.8 0 0 1-1.6 0v-2.4a.8.8 0 0 1 .8-.8zM3.5 3.5a.8.8 0 0 1 1 0l1.8 1.8a.8.8 0 1 1-1 1L3.5 4.6a.8.8 0 0 1 0-1zm14.2 14.2a.8.8 0 0 1 1 0l1.8 1.7a.8.8 0 0 1-1 1l-1.8-1.7a.8.8 0 0 1 0-1z"
+            ></path>
+            <path
+              class="moon"
+              fill-rule="evenodd"
+              d="M16.5 6A10.5 10.5 0 0 1 4.7 16.4 8.5 8.5 0 1 0 16.4 4.7l.1 1.3zm-1.7-2a9 9 0 0 1 .2 2 9 9 0 0 1-11 8.8 9.4 9.4 0 0 1-.8-.3c-.4 0-.8.3-.7.7a10 10 0 0 0 .3.8 10 10 0 0 0 9.2 6 10 10 0 0 0 4-19.2 9.7 9.7 0 0 0-.9-.3c-.3-.1-.7.3-.6.7a9 9 0 0 1 .3.8z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </nav>
 </header>
 
 <style>
-	header {
-		margin: 0;
-		padding: 0 0.75em;
-		background-color: rgb(var(--bg));
-		box-shadow: 0 2px 8px rgba(var(--shadow-color), var(--shadow-percent));
-	}
-	nav .logo {
-		display: flex;
-		margin: 0;
-		font-size: 1.1em;
-		font-weight: bolder;
-		border-bottom: 0;
-	}
-	.logo a,
-	.logo a.active {
-		text-decoration: none;
-	}
-	nav .logo span {
-		margin-left: 0.5em;
-	}
-	nav {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-	nav a {
-		font-weight: bolder;
-		padding: .2em .3em;
-		color: rgb(var(--color));
-		border-top: 4px solid transparent;
-		border-bottom: 4px solid transparent;
-		text-decoration: none;
-	}
-	nav a.active {
-		text-decoration: none;
-		border-bottom-color: rgb(var(--accent));
-	}
+  header {
+    margin: 0;
+    padding: 0 0.75em;
+    background-color: rgb(var(--bg));
+    box-shadow: 0 2px 8px rgba(var(--shadow-color), var(--shadow-percent));
+  }
+  nav .logo {
+    display: flex;
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: bolder;
+    border-bottom: 0;
+  }
+  .logo a,
+  .logo a.active {
+    text-decoration: none;
+  }
+  nav .logo span {
+    margin-left: 0.5em;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav a {
+    font-weight: bolder;
+    padding: 0.2em 0.3em;
+    color: rgb(var(--color));
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+  }
+  nav a.active {
+    text-decoration: none;
+    border-bottom-color: rgb(var(--accent));
+  }
 
-	#themeToggle:hover {
-		cursor: pointer;
-	}
-	.sun { fill: black; }
-	.moon { fill: transparent; }
+  #themeToggle:hover {
+    cursor: pointer;
+  }
+  .sun {
+    fill: black;
+  }
+  .moon {
+    fill: transparent;
+  }
 
-	:global(.dark) .sun { fill: transparent; }
-	:global(.dark) .moon { fill: white; }
+  :global(.dark) .sun {
+    fill: transparent;
+  }
+  :global(.dark) .moon {
+    fill: white;
+  }
 
-	.icon {
-		display: inline-flex;
-		align-self: center;
-	}
-	.icon svg, .icon img {
-		height: 1em;
-		width: 1em;
-		fill: currentColor;
-	}
-	.icon.baseline svg, .icon img {
-		top: .125em;
-		position: relative;
-	}
+  .icon {
+    display: inline-flex;
+    align-self: center;
+  }
+  .icon svg,
+  .icon img {
+    height: 1em;
+    width: 1em;
+    fill: currentColor;
+  }
+  .icon.baseline svg,
+  .icon img {
+    top: 0.125em;
+    position: relative;
+  }
 </style>
 
 <script is:inline>
-	// Site theme
-	const theme = (() => {
-		if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
-			return localStorage.getItem('theme');
-		}
-		if (window.matchMedia('(prefers-color-scheme: light)').matches) {
-      		return 'dark';
-    	}
-      	return 'light';
-	})();
+  // Site theme
+  const theme = (() => {
+    if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+      return localStorage.getItem("theme");
+    }
+    if (window.matchMedia("(prefers-color-scheme: light)").matches) {
+      return "dark";
+    }
+    return "light";
+  })();
 
-	if (theme === 'light') {
-		document.documentElement.classList.remove('dark');
-	} else {
-		document.documentElement.classList.add('dark');
-	}
+  if (theme === "light") {
+    document.documentElement.classList.remove("dark");
+  } else {
+    document.documentElement.classList.add("dark");
+  }
 
-	window.localStorage.setItem('theme', theme);
+  window.localStorage.setItem("theme", theme);
 
-	const handleToggleClick = () => {
-		const element = document.documentElement;
-		element.classList.toggle("dark");
+  const handleToggleClick = () => {
+    const element = document.documentElement;
+    element.classList.toggle("dark");
 
-		const isDark = element.classList.contains("dark");
-		localStorage.setItem("theme", isDark ? "dark" : "light");
-	}
+    const isDark = element.classList.contains("dark");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+  };
 
-	document.getElementById("themeToggle").addEventListener("click", handleToggleClick);
+  document
+    .getElementById("themeToggle")
+    .addEventListener("click", handleToggleClick);
 </script>
 <script>
-	// Site "analytics"
-	import {CounterAPI} from "counterapi";
+  // Site "analytics"
+  import { CounterAPI } from "counterapi";
 
-	const counter = new CounterAPI();
-    const name = import.meta.env.PUBLIC_COUNTER_NAME;
+  const counter = new CounterAPI();
+  const name = import.meta.env.PUBLIC_COUNTER_NAME;
 
-	counter.up("techsplanation.dev", name, true).then((res) => {
-		// console.log(res)
-	})
+  counter.up("techsplanation.dev", name, true).then((res) => {
+    // console.log(res)
+  });
 </script>

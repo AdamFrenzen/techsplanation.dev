@@ -1,38 +1,38 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-            <h1>Admin Panel</h1>
-            <p>Page view count: <span id="page_views">loading...</span></p>
-		</main>
-		<Footer />
-	</body>
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <h1>Admin Panel</h1>
+      <p>Page view count: <span id="page_views">loading...</span></p>
+    </main>
+    <Footer />
+  </body>
 </html>
 
 <script>
-    import {CounterAPI} from "counterapi";
+  import { CounterAPI } from "counterapi";
 
-    const viewCountEle = document.getElementById('page_views');
-    const counter = new CounterAPI();
-    const name = import.meta.env.PUBLIC_COUNTER_NAME;
+  const viewCountEle = document.getElementById("page_views");
+  const counter = new CounterAPI();
+  const name = import.meta.env.PUBLIC_COUNTER_NAME;
 
-    counter.get("techsplanation.dev", name, true).then((res) => {
-        if (viewCountEle) {
-            const views = res.Count;
-            viewCountEle.innerHTML = String(views);
-        } else {
-            console.error('Could not get the view count element.')
-        }
-    })
+  counter.get("techsplanation.dev", name, true).then((res) => {
+    if (viewCountEle) {
+      const views = res.Count;
+      viewCountEle.innerHTML = String(views);
+    } else {
+      console.error("Could not get the view count element.");
+    }
+  });
 </script>
