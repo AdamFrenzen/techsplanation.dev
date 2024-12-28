@@ -1,34 +1,38 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>
-				Hello and welcome to Techsplanation!
-			</h1>
-			<form action="/blog" style="text-align: center; margin: 2em;">
-				<button>View All Posts</button>
-			</form>
-			<p>
-				Techsplanation is a new blog site about programming and technology topics. There will mostly be tutorial/how-to posts and solutions to problems or questions.
-			</p>
-			<p>
-				The goal of Techsplanation is to inform in short, no fluff, easy to digest posts. 
-			</p>
-			<p>
-				There is also a YouTube channel for video form content. Not all posts will have a video and not all videos will correspond to a post. Video alternatives will be embedded into posts if that is more your speed, but the posts and videos will provide the same information. 
-			</p>
-		</main>
-		<Footer />
-	</body>
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <h1>Hello and welcome to Techsplanation!</h1>
+      <form action="/blog" style="text-align: center; margin: 2em;">
+        <button>View All Posts</button>
+      </form>
+      <p>
+        Techsplanation is a new blog site about programming and technology
+        topics. There will mostly be tutorial/how-to posts and solutions to
+        problems or questions.
+      </p>
+      <p>
+        The goal of Techsplanation is to inform in short, no fluff, easy to
+        digest posts.
+      </p>
+      <p>
+        There is also a YouTube channel for video form content. Not all posts
+        will have a video and not all videos will correspond to a post. Video
+        alternatives will be embedded into posts if that is more your speed, but
+        the posts and videos will provide the same information.
+      </p>
+    </main>
+    <Footer />
+  </body>
 </html>
