@@ -20,6 +20,7 @@ const leetcode = defineCollection({
     title: z.string(),
     // Transform string to Date object
     pubDate: z.coerce.date(),
+    difficulty: z.string(),
     updatedDate: z.coerce.date().optional(),
   }),
 });
